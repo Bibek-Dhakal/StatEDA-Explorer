@@ -2,17 +2,30 @@
 
 Automated Exploratory Data Analysis (EDA) and Parametric/Non-Parametric Statistical Hypothesis Testing Engine.
 
-When presented with a new dataset, teams often jump directly into training machine learning models without first evaluating feature distributions, identifying multi-collinearity, or checking if observed pattern differences across cohorts are statistically significant or merely random noise. **StatEDA-Explorer** bridges this gap.
+When presented with a new dataset, teams often jump directly into training machine learning models without first
+evaluating feature distributions, identifying multi-collinearity, or checking if observed pattern differences across
+cohorts are statistically significant or merely random noise. **StatEDA-Explorer** bridges this gap.
 
 ## Features
+
 - **Automated Missing Value & Summary Audit:** Profiles the dataset instantly.
-- **Distribution Normality Assessment:** Automatically evaluates normality using Shapiro-Wilk testing to route workflows optimally.
-- **Parametric vs. Non-Parametric Routing:** Intelligently switches between Student's T-Test and Mann-Whitney U based on underlying distribution shape.
+- **Distribution Normality Assessment:** Automatically evaluates normality using Shapiro-Wilk testing to route workflows
+  optimally.
+- **Parametric vs. Non-Parametric Routing:** Intelligently switches between Student's T-Test and Mann-Whitney U based on
+  underlying distribution shape.
 - **Categorical Association Tests:** Chi-Square tests of independence.
 - **Multicollinearity Audits:** VIF (Variance Inflation Factor) score computation.
 - **Effect Size Estimation:** Automatically calculates Cohen's $d$ or Cramér's $V$ alongside $p$-values.
 
+## Releases & Run Results
+
+-
+**[Latest Release Notes (v0.2.0)](https://github.com/Bibek-Dhakal/StatEDA-Explorer/blob/main/docs/releases/v0.2.0.md)**
+-
+**[Execution Results & Outcomes Doc](https://github.com/Bibek-Dhakal/StatEDA-Explorer/blob/main/docs/results/README.md)**
+
 ## Documentation Index
+
 - [Usage Guide](docs/usage/README.md)
 - [Architecture](docs/architecture/README.md)
 - [Testing Guidelines](docs/testing/README.md)
@@ -51,4 +64,5 @@ print(vif)
 ```
 
 ## License
+
 MIT License
