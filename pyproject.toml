@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "stateda-explorer"
-version = "0.1.0"
+version = "0.2.0"
 description = "Automated Exploratory Data Analysis (EDA) and Parametric/Non-Parametric Statistical Hypothesis Testing Engine."
 readme = "README.md"
 requires-python = ">=3.9"
