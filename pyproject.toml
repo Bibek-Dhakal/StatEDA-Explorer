@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stateda-explorer"
+version = "0.1.0"
+description = "Automated Exploratory Data Analysis (EDA) and Parametric/Non-Parametric Statistical Hypothesis Testing Engine."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+  { name = "Bibek Dhakal" }
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0",
+    "seaborn>=0.12.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.3.0",
+    "pre-commit>=3.5.0",
+    "jupyter>=1.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stateda"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --cov=stateda --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B"]
+ignore = ["E501"]
